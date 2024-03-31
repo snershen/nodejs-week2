@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "ee3fa1f0-a0b3-427a-8e45-a149d7954cca",
+		"name": "posts - Render",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22670715"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:3000/posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nodejs-week2-z6ur.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodejs-week2-z6ur",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/posts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jamie\",\n    \"content\": \"今天天氣真好\",\n    \"tags\": \"出門\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week2-z6ur.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodejs-week2-z6ur",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/posts/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"很適合出去玩的日子\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week2-z6ur.onrender.com/posts/:id",
+					"protocol": "https",
+					"host": [
+						"nodejs-week2-z6ur",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/posts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week2-z6ur.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodejs-week2-z6ur",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/posts/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://nodejs-week2-z6ur.onrender.com/posts/:id",
+					"protocol": "https",
+					"host": [
+						"nodejs-week2-z6ur",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/posts",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "https://nodejs-week2-z6ur.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodejs-week2-z6ur",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
